@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-compress
 Version  : 1.10
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.10/commons-compress-1.10.pom
@@ -16,8 +16,10 @@ Source6  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.
 Source7  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom
 Source8  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar
 Source9  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom
-Source10  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
-Source11  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.5/commons-compress-1.5.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.5/commons-compress-1.5.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -69,11 +71,17 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/comm
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.4.1
 cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.4.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.5
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.5
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.5
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.5
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1
 
 
 %files
@@ -91,5 +99,7 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/com
 /usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom
 /usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar
 /usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom
+/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.5/commons-compress-1.5.jar
+/usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.5/commons-compress-1.5.pom
 /usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
 /usr/share/java/.m2/repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
