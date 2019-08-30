@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-compress
 Version  : 1.10
-Release  : 7
+Release  : 8
 URL      : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.10/commons-compress-1.10.pom
