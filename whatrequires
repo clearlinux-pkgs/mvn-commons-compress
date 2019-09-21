@@ -1,2 +1,7 @@
 # This file contains recursive sources that require this package
+apache-hadoop
 apache-maven
+apache-spark
+cassandra
+gradle
+rabbitmq-java-client
